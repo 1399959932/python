@@ -51,7 +51,7 @@
 	=
 	lambda x, y : x + y
 
-# filter(abject)  #过滤器
+ filter(abject)  #过滤器
 	filter(func()/None,[]) #返回值可用list()修饰 例:
 	# 过滤1到10的奇数
 	def odd(x):
