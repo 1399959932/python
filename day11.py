@@ -343,3 +343,35 @@ os.path
 	    elif s[-1] == ' ':
 	        return trim(s[:-1])
 	    return s
+
+迭代
+	如果给定一个list或tuple，我们可以通过for循环来遍历这个list或tuple，这种遍历我们称为迭代
+	每一次靠近目标的操作,称之为迭代,也可以理解成循环
+	for (i=0; i<list.length; i++) {
+   	 	n = list[i];
+	}
+
+	如何判断一个对象是可迭代对象呢？方法是通过collections模块的Iterable类型判断：
+
+	>>> from collections import Iterable
+	>>> isinstance('abc', Iterable) # str是否可迭代
+	True
+	>>> isinstance([1,2,3], Iterable) # list是否可迭代
+	True
+	>>> isinstance(123, Iterable) # 整数是否可迭代
+	False
+
+	enumerate(),函数可以把一个list变成索引-元素对
+	>>> for i, value in enumerate(['A', 'B', 'C']):
+	    print(i, value)
+	
+	0 A
+	1 B
+	2 C
+
+	>>> for x, y in [(1, 1), (2, 4), (3, 9)]:
+	    print(x, y)
+	
+	1 1
+	2 4
+3 9
